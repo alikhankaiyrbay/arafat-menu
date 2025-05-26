@@ -1,0 +1,57 @@
+.horizontal-card {
+  display: grid;
+  gap: 10px;
+  grid-auto-columns: 120px auto;
+  grid-auto-rows: 120px;
+  grid-auto-flow: column;
+  overflow: hidden;
+}
+
+.hl-c-image {
+  background: #000;
+  border-radius: 15px;
+}
+
+.hl-c-data {
+  display: grid;
+  align-content: space-between;
+}
+
+.hl-c-name {
+  font-weight: 600;
+}
+
+.hl-c-description {
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: calc(1.5em * 2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hl-c-expenses {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hl-c-price {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hl-c-define {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.hl-c-define-icon {
+  color: #303030;
+  font-size: 25px;
+  background: #ececec;
+  border-radius: 100px;
+}

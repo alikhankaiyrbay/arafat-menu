@@ -1,0 +1,29 @@
+.vacancies {
+  display: grid;
+  gap: 20px;
+}
+
+.vacancies-cards {
+  display: grid;
+  gap: 20px;
+}
+
+.vacancy {
+  display: grid;
+  gap: 10px;
+  grid-auto-columns: 10px auto;
+  grid-auto-flow: column;
+  border: 1px solid #303030;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.vacancy-data {
+  padding: 10px 0px;
+  display: grid;
+  gap: 10px;
+}
+
+.vacancy-status {
+  background: #ff0000;
+}

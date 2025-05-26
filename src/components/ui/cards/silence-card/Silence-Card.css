@@ -1,0 +1,27 @@
+.silence-card {
+  display: grid;
+  gap: 10px;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.se-c-streak {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.se-c-streak:first-child {
+  justify-items: start;
+}
+
+.se-c-streak:last-child {
+  justify-items: end;
+}
+
+.se-c-name,
+.se-c-total-price {
+  font-weight: 600;
+}

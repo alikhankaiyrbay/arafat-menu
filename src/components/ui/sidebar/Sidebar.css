@@ -1,0 +1,31 @@
+.sidebar {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: auto 1fr auto;
+  align-items: center;
+  background: #fff;
+}
+
+.sidebar-label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sidebar-repository {
+  display: grid;
+  gap: 30px;
+  align-content: start;
+}
+
+.sidebar-path {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.sidebar-path-icon {
+  font-size: 25px;
+}

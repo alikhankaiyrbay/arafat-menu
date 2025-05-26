@@ -1,0 +1,60 @@
+.correctional-card {
+  display: grid;
+  gap: 10px;
+  grid-auto-columns: 70px auto;
+  grid-auto-rows: 70px;
+  grid-auto-flow: column;
+  overflow: hidden;
+}
+
+.cl-c-image {
+  background: #acacac;
+  border-radius: 15px;
+}
+
+.cl-c-data {
+  display: grid;
+  align-content: space-between;
+}
+
+.cl-c-streak {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cl-c-remove-icon {
+  font-size: 20px;
+}
+
+.cl-c-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cl-c-expenses {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cl-c-total-price {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cl-c-define {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.cl-c-define-icon {
+  color: #303030;
+  font-size: 25px;
+  background: #ececec;
+  border-radius: 100px;
+}

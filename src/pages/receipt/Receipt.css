@@ -1,0 +1,26 @@
+.receipt {
+  display: grid;
+  gap: 20px;
+}
+
+.receipt-notice {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  border: 1px solid #303030;
+  border-radius: 15px;
+}
+
+.receipt-label {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  border: 1px solid #303030;
+  border-radius: 15px;
+}
+
+.silence-cards {
+  display: grid;
+  gap: 10px;
+}

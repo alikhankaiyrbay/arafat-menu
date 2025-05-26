@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+body {
+  color: #303030;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100%;
+  background: #000;
+  position: relative;
+}
+
+.between-line {
+  border: 1px solid #dadada;
+  border-radius: 100px;
+}

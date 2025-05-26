@@ -1,0 +1,32 @@
+.cart {
+  display: grid;
+  gap: 20px;
+}
+
+.cart-notice {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  border: 1px solid #303030;
+  border-radius: 15px;
+}
+
+.cart-label {
+  padding: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #303030;
+  border-radius: 15px;
+}
+
+.cart-label-icon {
+  font-size: 30px;
+}
+
+.correctional-cards {
+  display: grid;
+  gap: 20px;
+}
