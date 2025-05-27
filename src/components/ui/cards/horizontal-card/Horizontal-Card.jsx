@@ -18,7 +18,7 @@ const Horizontal_Card = ({ short }) => {
       <div className="hl-c-chassis">
         <img
           className="hl-c-image"
-          src={`/public/${short.image}`}
+          src={`/${short.image}`}
           onClick={() =>
             navigate(`/menu/${category}/${sub_category}/${short.slug}`)
           }

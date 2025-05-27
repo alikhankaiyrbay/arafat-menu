@@ -18,7 +18,7 @@ const Correctional_Card = ({ short }) => {
     <>
       <div className="correctional-card" key={short.slug}>
         <div className="cl-c-chassis">
-          <img className="cl-c-image" src={`/public/${short.image}`} />
+          <img className="cl-c-image" src={`/${short.image}`} />
         </div>
         <div className="cl-c-data">
           <div className="cl-c-streak">
