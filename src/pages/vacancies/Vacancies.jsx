@@ -10,6 +10,7 @@ const Vacancies = () => {
   return (
     <>
       <div className="vacancies">
+        <div className="vacancies-label">Вакансии</div>
         <div className="vacancies-cards">
           {vacancies.map((line) => (
             <div className="vacancy" key={line.label}>

@@ -9,7 +9,14 @@ import { use_cart } from "../../context/Cart_Context";
 import format_price from "../../utils/format_price";
 
 const Menu = () => {
-  const [menu_view, set_menu_view] = useState("horizontal");
+  const [menu_view, set_menu_view] = useState(() => {
+    return localStorage.getItem("menu_view") || "horizontal";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("menu_view", menu_view);
+  }, [menu_view]);
+
   const { category, sub_category } = useParams();
   const navigate = useNavigate();
   const products = use_products();

@@ -7,9 +7,17 @@
   overflow: hidden;
 }
 
-.cl-c-image {
-  background: #acacac;
+.cl-c-chassis {
+  min-height: 100%;
+  background: #708d6f;
   border-radius: 15px;
+  overflow: hidden;
+}
+
+.cl-c-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cl-c-data {

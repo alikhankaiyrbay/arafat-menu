@@ -4,12 +4,14 @@
   gap: 20px;
   grid-auto-rows: auto 1fr auto;
   align-items: center;
-  background: #fff;
+  background: #f0f0f0;
 }
 
 .sidebar-label {
   font-size: 20px;
   font-weight: 600;
+  display: grid;
+  justify-self: center;
 }
 
 .sidebar-repository {

@@ -7,9 +7,17 @@
   overflow: hidden;
 }
 
-.hl-c-image {
-  background: #000;
+.hl-c-chassis {
+  min-height: 100%;
+  background: #708d6f;
   border-radius: 15px;
+  overflow: hidden;
+}
+
+.hl-c-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hl-c-data {
@@ -19,6 +27,10 @@
 
 .hl-c-name {
   font-weight: 600;
+  line-height: 1.5;
+  max-height: calc(1.5em * 2);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hl-c-description {

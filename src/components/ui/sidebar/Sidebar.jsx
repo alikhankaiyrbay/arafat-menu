@@ -35,16 +35,16 @@ const sidebar_transitions = [
     icon: <IoMapOutline className="sidebar-path-icon" />,
     path: "/contacts",
   },
-  {
-    label: "Вакансии",
-    icon: <IoPeopleOutline className="sidebar-path-icon" />,
-    path: "/vacancies",
-  },
-  {
-    label: "Отзывы",
-    icon: <IoChatbubbleEllipsesOutline className="sidebar-path-icon" />,
-    path: "/reviews",
-  },
+  // {
+  //   label: "Вакансии",
+  //   icon: <IoPeopleOutline className="sidebar-path-icon" />,
+  //   path: "/vacancies",
+  // },
+  // {
+  //   label: "Отзывы",
+  //   icon: <IoChatbubbleEllipsesOutline className="sidebar-path-icon" />,
+  //   path: "/reviews",
+  // },
 ];
 
 const Sidebar = () => {
@@ -52,7 +52,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="sidebar">
-        <div className="sidebar-label">727</div>
+        <div className="sidebar-label">Arafat</div>
         <div className="sidebar-repository">
           {sidebar_transitions.map((line) => (
             <Link

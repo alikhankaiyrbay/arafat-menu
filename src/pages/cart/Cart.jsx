@@ -15,7 +15,7 @@ import format_price from "../../utils/format_price";
 const Cart = () => {
   const navigate = useNavigate();
   const { cart, get_total_price, clear_cart } = use_cart();
-
+console.log(cart)
   return (
     <>
       <div className="cart">
@@ -35,7 +35,7 @@ const Cart = () => {
               <IoTrashOutline
                 className="cart-label-icon"
                 onClick={() => {
-                  if (confirm("Вы действительно хотите очистить корзину?")) {
+                  if (confirm("Подтвердите очистку всей корзины")) {
                     setTimeout(() => clear_cart(), 50);
                   }
                 }}

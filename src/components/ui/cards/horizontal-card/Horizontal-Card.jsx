@@ -15,12 +15,15 @@ const Horizontal_Card = ({ short }) => {
 
   return (
     <div className="horizontal-card" key={short.slug}>
-      <div
-        className="hl-c-image"
-        onClick={() =>
-          navigate(`/menu/${category}/${sub_category}/${short.slug}`)
-        }
-      ></div>
+      <div className="hl-c-chassis">
+        <img
+          className="hl-c-image"
+          src={`/public/${short.image}`}
+          onClick={() =>
+            navigate(`/menu/${category}/${sub_category}/${short.slug}`)
+          }
+        />
+      </div>
       <div className="hl-c-data">
         <div className="hl-c-name">{short.name}</div>
         <div className="hl-c-description">{short.description}</div>

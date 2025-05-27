@@ -1,0 +1,26 @@
+.search {
+  display: grid;
+  gap: 20px;
+}
+
+.search-field {
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid #303030;
+  border-radius: 15px;
+  outline: none;
+}
+
+.search-repository {
+  display: grid;
+  gap: 20px;
+}
+
+.search-collection {
+  display: grid;
+  gap: 20px;
+}
+
+.search-collection-label {
+  font-weight: 600;
+}

@@ -5,6 +5,7 @@ import App from "../app/App";
 import Layout from "../layout/Layout";
 
 import Menu from "../pages/menu/Menu";
+import Search from "../pages/search/Search";
 import Cart from "../pages/cart/Cart";
 import Receipt from "../pages/receipt/Receipt";
 import Contacts from "../pages/contacts/Contacts";
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
           {
             path: "menu/:category/:sub_category",
             element: <Menu />,
+          },
+          {
+            path: "search",
+            element: <Search />,
           },
           {
             path: "cart",
