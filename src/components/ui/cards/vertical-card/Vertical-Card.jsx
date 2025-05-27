@@ -18,7 +18,7 @@ const Vertical_Card = ({ short }) => {
         <div className="vl-c-chassis">
           <img
             className="vl-c-image"
-            src={`/public/${short.image}`}
+            src={`public/${short.image}`}
             onClick={() =>
               navigate(`/menu/${category}/${sub_category}/${short.slug}`)
             }
