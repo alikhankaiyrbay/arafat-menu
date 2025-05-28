@@ -17,12 +17,7 @@ const Product = () => {
   const { category, sub_category, product } = useParams();
   const navigate = useNavigate();
   const products = use_products();
-  const {
-    add_to_cart,
-    remove_from_cart,
-    decrease_quantity,
-    get_product_quantity,
-  } = use_cart();
+  const { add_to_cart, decrease_quantity, get_product_quantity } = use_cart();
 
   const crossline = products.categories
     .find((line) => line.slug === category)

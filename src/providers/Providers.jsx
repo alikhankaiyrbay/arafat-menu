@@ -1,6 +1,6 @@
 import { Cart_Provider } from "../context/Cart_Context";
 import { Products_Provider } from "../context/Products_Context";
-import { Sidebar_Provider } from "../context/Sidebar_Context";
+import  Sidebar_Provider  from "../context/Sidebar-Context";
 import { Vacancies_Provider } from "../context/Vacancies_Context";
 import { Contacts_Provider } from "../context/Contacts_Context";
 

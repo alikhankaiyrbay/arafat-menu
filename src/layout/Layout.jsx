@@ -1,20 +1,29 @@
 import "./Layout.css";
 
-import Header from "../components/ui/header/Header";
 import { Outlet } from "react-router";
-import Stamp from "../components/ui/stamp/Stamp";
 
-import { use_sidebar } from "../context/Sidebar_Context";
+import Sidebar from "../components/ui/sidebar/Sidebar";
+
+import Header from "../components/ui/header/Header";
+import Stamp from "../components/ui/stamp/Stamp";
+import Rise from "../components/ui/rise/Rise";
+
+import { use_sidebar } from "../context/Sidebar-Context";
 
 const Layout = () => {
-  const { master_sidebar } = use_sidebar();
+  const { shift, close_sidebar_if_open } = use_sidebar();
 
   return (
     <>
-      <div className={`layout ${master_sidebar ? "layout-limit" : ""}`}>
+      <Sidebar />
+      <div
+        className={`layout ${shift ? "layout-limit" : ""}`}
+        onClick={close_sidebar_if_open}
+      >
         <Header />
         <Outlet />
         <Stamp />
+        <Rise />
       </div>
     </>
   );

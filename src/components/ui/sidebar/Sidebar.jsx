@@ -12,7 +12,7 @@ import {
 
 import { Link } from "react-router";
 
-import { use_sidebar } from "../../../context/Sidebar_Context";
+import { use_sidebar } from "../../../context/Sidebar-Context";
 
 const sidebar_transitions = [
   {
@@ -51,23 +51,25 @@ const Sidebar = () => {
   const { close_sidebar } = use_sidebar();
   return (
     <>
-      <div className="sidebar">
-        <div className="sidebar-label">Arafat</div>
-        <div className="sidebar-repository">
-          {sidebar_transitions.map((line) => (
-            <Link
-              className="sidebar-path"
-              onClick={close_sidebar}
-              to={line.path}
-              key={line.path}
-            >
-              {line.icon} <div>{line.label}</div>
-            </Link>
-          ))}
-        </div>
-        <div className="sidebar-path" onClick={close_sidebar}>
-          <IoCloseCircleOutline className="sidebar-path-icon" />
-          <div>Закрыть</div>
+      <div className="sidebar-backdrop">
+        <div className="sidebar">
+          <div className="sidebar-label">Arafat</div>
+          <div className="sidebar-repository">
+            {sidebar_transitions.map((line) => (
+              <Link
+                className="sidebar-path"
+                onClick={close_sidebar}
+                to={line.path}
+                key={line.path}
+              >
+                {line.icon} <div>{line.label}</div>
+              </Link>
+            ))}
+          </div>
+          <div className="sidebar-path" onClick={close_sidebar}>
+            <IoCloseCircleOutline className="sidebar-path-icon" />
+            <div>Закрыть</div>
+          </div>
         </div>
       </div>
     </>

@@ -1,0 +1,18 @@
+.rise {
+  color: #303030;
+  font-size: 60px;
+  border-radius: 100px;
+  transition: bottom 0.6s ease, opacity 0.3s ease;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 666;
+  position: fixed;
+  bottom: -100px;
+  left: 20px;
+}
+
+.active-rise {
+  bottom: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}

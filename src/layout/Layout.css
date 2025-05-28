@@ -4,8 +4,6 @@
   gap: 20px;
   grid-auto-rows: auto 1fr auto;
   align-items: start;
-  background: #fff;
-  position: relative;
 }
 
 .layout-limit {

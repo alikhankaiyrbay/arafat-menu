@@ -2,7 +2,7 @@
   padding: 10px;
   display: grid;
   gap: 10px;
-  grid-auto-rows: 50% 50%;
+  grid-auto-rows: 170px auto;
   background: #f1f1f1;
   border-radius: 15px;
   overflow: hidden;
@@ -29,6 +29,10 @@
 
 .vl-c-name {
   font-weight: 600;
+  line-height: 1.5;
+  max-height: calc(1.5em * 2);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .vl-c-description {

@@ -1,7 +1,5 @@
 import { createBrowserRouter } from "react-router";
 
-import App from "../app/App";
-
 import Layout from "../layout/Layout";
 
 import Menu from "../pages/menu/Menu";
@@ -16,53 +14,47 @@ import Product from "../pages/product/Product";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Layout />,
     children: [
       {
         path: "/",
-        element: <Layout />,
-        children: [
-          {
-            path: "/",
-            element: <Menu />,
-          },
-          {
-            path: "menu",
-            element: <Menu />,
-          },
-          {
-            path: "menu/:category",
-            element: <Menu />,
-          },
-          {
-            path: "menu/:category/:sub_category",
-            element: <Menu />,
-          },
-          {
-            path: "search",
-            element: <Search />,
-          },
-          {
-            path: "cart",
-            element: <Cart />,
-          },
-          {
-            path: "receipt",
-            element: <Receipt />,
-          },
-          {
-            path: "contacts",
-            element: <Contacts />,
-          },
-          {
-            path: "vacancies",
-            element: <Vacancies />,
-          },
-          {
-            path: "reviews",
-            element: <Reviews />,
-          },
-        ],
+        element: <Menu />,
+      },
+      {
+        path: "menu",
+        element: <Menu />,
+      },
+      {
+        path: "menu/:category",
+        element: <Menu />,
+      },
+      {
+        path: "menu/:category/:sub_category",
+        element: <Menu />,
+      },
+      {
+        path: "search",
+        element: <Search />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
+      },
+      {
+        path: "receipt",
+        element: <Receipt />,
+      },
+      {
+        path: "contacts",
+        element: <Contacts />,
+      },
+      {
+        path: "vacancies",
+        element: <Vacancies />,
+      },
+      {
+        path: "reviews",
+        element: <Reviews />,
       },
     ],
   },

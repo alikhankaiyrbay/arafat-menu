@@ -1,10 +1,13 @@
 .sidebar {
+  width: 50%;
+  height: 100%;
   padding: 20px;
   display: grid;
   gap: 20px;
   grid-auto-rows: auto 1fr auto;
   align-items: center;
   background: #f0f0f0;
+  position: fixed;
 }
 
 .sidebar-label {
