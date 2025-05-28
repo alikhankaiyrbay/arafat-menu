@@ -35,3 +35,8 @@ body.no-scroll {
 .root-shift {
   left: 0%;
 }
+
+.between-line {
+  border: 1px solid #303030;
+  border-radius: 100px;
+}
